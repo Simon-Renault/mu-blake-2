@@ -1,7 +1,7 @@
 <template lang="pug">
 div
     v-project-content( )
-        div(v-html="html")
+        div.content(v-html="html")
     div.left
         v-island.island(key="nyx" 
                         :project="project"
@@ -37,8 +37,8 @@ export default {
             const lang = this.getLang
 
             return {
-                fr : `${base}/${project_id}__${lang}.html`,
-                en : `${base}/${project_id}__${lang}.html`
+                fr : `${base}/${lang}.html`,
+                en : `${base}/${lang}.html`
             }
         }
     },
@@ -83,5 +83,9 @@ export default {
    @media screen and (min-width : $medium){
       display: flex;
    } 
+}
+
+.content{
+    padding: 0 10%;
 }
 </style>

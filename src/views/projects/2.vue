@@ -3,8 +3,8 @@
 div.content   
     v-nav( right="/page/1" left="/page/3" top="/page/1" bottom="/page/3" key="p2")
 
-    v-island.island.a(  key="atlantide" 
-                        :project="projects['atlantide']"
+    v-island.island.a(  key="kurosawas_grave" 
+                        :project="projects['kurosawas_grave']"
                         delay=300)
 
     v-island.island.b(  key="nyx" 

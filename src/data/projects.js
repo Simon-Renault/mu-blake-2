@@ -1,11 +1,11 @@
 export default {
-    atlantide : {
+    kurosawas_grave : {
         title : "KUROSAWA'S GRAVE",
-        url : "/kurosawas-grave",
+        url : "/kurosawas_grave",
         cover : {
             backgroundImage : "/img/01.jpg",
             cornerImage : "",
-            islandModel : "1"
+            islandModel : "2"
         }
     },
     nyx : {
@@ -14,7 +14,7 @@ export default {
         cover : {
             backgroundImage : "/img/texture1.png",
             cornerImage : "",
-            islandModel : "5"
+            islandModel : "2"
         }
     },
     gif : {
@@ -26,13 +26,4 @@ export default {
             islandModel : "2"
         }
     },
-    testandpub : {
-        title : "GIF",
-        url : "/gif",
-        cover : {
-            backgroundImage : "/img/texture1.png",
-            cornerImage : "",
-            islandModel : "2"
-        }
-    }
 }
