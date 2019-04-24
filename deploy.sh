@@ -3,6 +3,7 @@
 
 
 echo "Starting deployment process"
+yarn run build
 git add .
 git commit -m "new build"
 git push
