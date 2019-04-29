@@ -12,28 +12,20 @@ self.__precacheManifest = [
     "url": "/img/texture1.png"
   },
   {
-    "revision": "03b80e3c935dd78958fa",
-    "url": "/js/chunk-2b3202ac.d4eda72f.js"
+    "revision": "ed913aadaa7ef9968769",
+    "url": "/js/chunk-2f866ef3.4deaf23a.js"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "ed913aadaa7ef9968769",
-    "url": "/js/chunk-2f866ef3.4deaf23a.js"
+    "revision": "6a22b5cba85b56149b3f",
+    "url": "/js/chunk-45f96011.18693aaa.js"
   },
   {
-    "revision": "c29c4d71abb7858b50a2",
-    "url": "/js/app.9015f8a3.js"
-  },
-  {
-    "revision": "78f711d41a4a2ed62e7e",
-    "url": "/js/chunk-45f96011.e4d37df4.js"
-  },
-  {
-    "revision": "c22dc81968b7eee932ec92d939c6a2b8",
-    "url": "/index.html"
+    "revision": "2cc73faf9833f77ed89a",
+    "url": "/js/app.8893a0dc.js"
   },
   {
     "revision": "8279238b394bf229ff1d",
@@ -44,27 +36,31 @@ self.__precacheManifest = [
     "url": "/js/chunk-c9f46c6e.e4a447ef.js"
   },
   {
+    "revision": "e70bcb5d8a9482c0367d218de6324ebc",
+    "url": "/index.html"
+  },
+  {
+    "revision": "abe21156b05136189c52",
+    "url": "/js/chunk-cd9a8fc2.a7a87e5e.js"
+  },
+  {
     "revision": "9c0ba63281d146353e47",
     "url": "/js/chunk-vendors.468d7611.js"
   },
   {
-    "revision": "00e82a4ec8f662329f72",
-    "url": "/js/chunk-d9581a8e.0d649648.js"
+    "revision": "71f57b18c2713a62b0a6",
+    "url": "/js/chunk-d9581a8e.bd21cb24.js"
   },
   {
-    "revision": "6c515d602f167b68c26fed6dc7dd2df5",
-    "url": "/content/nyx/fr.html"
+    "revision": "adbdd17ac8183bd8ad9fa1946ba8412f",
+    "url": "/favicon.png"
   },
   {
-    "revision": "00e82a4ec8f662329f72",
+    "revision": "71f57b18c2713a62b0a6",
     "url": "/css/chunk-d9581a8e.9ab61dbe.css"
   },
   {
-    "revision": "ed913aadaa7ef9968769",
-    "url": "/css/chunk-2f866ef3.56f1e1e4.css"
-  },
-  {
-    "revision": "78f711d41a4a2ed62e7e",
+    "revision": "6a22b5cba85b56149b3f",
     "url": "/css/chunk-45f96011.35c462f1.css"
   },
   {
@@ -72,23 +68,31 @@ self.__precacheManifest = [
     "url": "/css/chunk-b233cfec.5defb187.css"
   },
   {
+    "revision": "abe21156b05136189c52",
+    "url": "/css/chunk-cd9a8fc2.9139a08c.css"
+  },
+  {
     "revision": "1dafa7065b819dc913efb349faedac1c",
     "url": "/assets/images/sample-03.png"
   },
   {
-    "revision": "c29c4d71abb7858b50a2",
+    "revision": "2cc73faf9833f77ed89a",
     "url": "/css/app.eb91b90c.css"
   },
   {
-    "revision": "03b80e3c935dd78958fa",
-    "url": "/css/chunk-2b3202ac.9c254ff5.css"
+    "revision": "ed913aadaa7ef9968769",
+    "url": "/css/chunk-2f866ef3.56f1e1e4.css"
+  },
+  {
+    "revision": "d2d0290f2dcbac7a0baab80e0a8bf9ab",
+    "url": "/content/nyx/fr.html"
   },
   {
     "revision": "9be8b3f25c922116a217eddb52a5e9e4",
     "url": "/content/nyx/en.html"
   },
   {
-    "revision": "600f7cb4250ecce2a471ff8f5e02e5a6",
+    "revision": "7a7784596e18907e598fb7cf58fa479d",
     "url": "/content/kurosawas_grave/fr.html"
   },
   {

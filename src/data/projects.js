@@ -6,7 +6,8 @@ export default {
             backgroundImage : "/img/01.jpg",
             cornerImage : "",
             islandModel : "2"
-        }
+        },
+        next : "/nyx"
     },
     nyx : {
         title : "Nyx",
@@ -15,7 +16,8 @@ export default {
             backgroundImage : "/img/texture1.png",
             cornerImage : "",
             islandModel : "2"
-        }
+        },
+        next : "/nyx"
     },
     gif : {
         title : "GIF",
@@ -24,6 +26,7 @@ export default {
             backgroundImage : "/img/texture1.png",
             cornerImage : "",
             islandModel : "2"
-        }
+        },
+        next : "/nyx"
     },
 }
