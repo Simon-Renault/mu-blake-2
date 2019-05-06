@@ -54,6 +54,14 @@ export default {
 
 <style lang="scss" >
 .page-projects{
-
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+.page__inner{
+   
 }
 </style>

@@ -10,11 +10,12 @@
             div.actions(ref="actions")
                 div.language
                     button.ll.fr( @click="setLangFR" ref="lg"  :class="{'active':isFr}")
-                        span french
+                        span Français
                     button.ll.en( @click="setLangEN" ref="lg2" :class="{'active':isEn}")
-                        span english
+                        span English
                 button.button.enter( @click="enter" ref="button")
-                    span enter
+                    span(v-if="isEn") ENTER
+                    span(v-else) ENTRER
 </template>
 
 <script>

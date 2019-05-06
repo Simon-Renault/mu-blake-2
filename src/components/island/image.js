@@ -7,9 +7,9 @@ export default class Image {
 		this.CONFIG = {
 			animation: {
 				image: {
-					duration: this.DOM.el.dataset.animationImageDuration || 2000,
+					duration: this.DOM.el.dataset.animationImageDuration || 1000,
 					delay: this.DOM.el.dataset.animationImageDelay || 0,
-					easing: this.DOM.el.dataset.animationImageEasing || 'easeOutElastic',
+					easing: this.DOM.el.dataset.animationImageEasing || 'easeOutQuad',
 					elasticity: this.DOM.el.dataset.imageElasticity || 400,
 					scaleX: this.DOM.el.dataset.imageScalex || 1.2,
 					scaleY: this.DOM.el.dataset.imageScaley || 1.2,

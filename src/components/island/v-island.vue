@@ -155,11 +155,12 @@ export default {
    width: 500px;
    height: 500px;
 	max-width: 100%;
-	cursor: pointer;
+   cursor: pointer;
    display: inline-flex;
    justify-content: center;
    align-items: center;
    opacity: 0;
+
    &__title{
       z-index: 99;
       position: absolute;

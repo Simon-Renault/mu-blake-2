@@ -15,6 +15,7 @@ div.content
                         :project="projects['gif']"
                         delay=300)
 
+ 
 </template>
 
 <script>
@@ -29,14 +30,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.a{
+
+
+
+
+@media screen and (min-width : $medium){
+   .a{
     top: 400px;
+    }
+    .b{
+        top: 100px;
+    }
+    .c{
+        top: 530px;
+    }
+    .island{
+        width: 25vw;
+        height: 25vw;
+       
+    }
 }
-.b{
-    top: 100px;
-}
-.c{
-    top: 530px;
-    left: 250px;
-}
+
 </style>

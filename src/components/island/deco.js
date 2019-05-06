@@ -7,7 +7,7 @@ export default class Deco {
 		this.CONFIG = {
 			animation: {
 				deco: {
-					duration: this.DOM.el.dataset.animationDecoDuration || 1500,
+					duration: this.DOM.el.dataset.animationDecoDuration || 700,
 					delay: this.DOM.el.dataset.animationDecoDelay || 0,
 					easing: this.DOM.el.dataset.animationDecoEasing || 'easeOutQuad',
 					elasticity: this.DOM.el.dataset.decoElasticity || 400,

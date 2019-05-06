@@ -3,9 +3,9 @@ export default {
         title : "KUROSAWA'S GRAVE",
         url : "/kurosawas_grave",
         cover : {
-            backgroundImage : "/img/01.jpg",
+            backgroundImage : "/content/kurosawas_grave/assets/cover.png", 
             cornerImage : "",
-            islandModel : "2"
+            islandModel : "3"
         },
         next : "/nyx"
     },
@@ -13,7 +13,7 @@ export default {
         title : "Nyx",
         url : "/nyx",
         cover : {
-            backgroundImage : "/img/texture1.png",
+            backgroundImage : "/content/nyx/assets/cover.png",
             cornerImage : "",
             islandModel : "2"
         },
@@ -25,7 +25,7 @@ export default {
         cover : {
             backgroundImage : "/img/texture1.png",
             cornerImage : "",
-            islandModel : "2"
+            islandModel : "5"
         },
         next : "/nyx"
     },

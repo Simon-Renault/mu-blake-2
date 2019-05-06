@@ -15,9 +15,9 @@ export default class Path {
 		this.CONFIG = {
 			animation: {
 				path: {
-					duration: this.DOM.el.dataset.animationPathDuration || 1500,
+					duration: this.DOM.el.dataset.animationPathDuration || 500,
 					delay: this.DOM.el.dataset.animationPathDelay || 0,
-					easing: this.DOM.el.dataset.animationPathEasing || 'easeOutElastic',
+					easing: this.DOM.el.dataset.animationPathEasing || 'easeOutQuad',
 					elasticity: this.DOM.el.dataset.pathElasticity || 400,
 					scaleX: this.DOM.el.dataset.pathScalex || 1,
 					scaleY: this.DOM.el.dataset.pathScaley || 1,
