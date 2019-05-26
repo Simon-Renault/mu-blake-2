@@ -87,5 +87,9 @@ export default {
 
 .content{
     padding: 0 10%;
+    &  img{
+        margin: 20px 0;
+    }
 }
+
 </style>
