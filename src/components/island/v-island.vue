@@ -1,8 +1,9 @@
 <template lang="pug">
 
-.item()
+.item( :style="displacement")
    router-link.item__link( :to="path")
       h2.item__title(ref="title") {{project.title}}
+      div.outside( ref="outside" :style="outside")
       svg.item__svg( :width="width" 
                      :height="height" 
                      viewBox="0 0 500 500" 
@@ -45,6 +46,9 @@ export default {
       },
       delay : {
          default : 1000,
+      },
+      forceHover : {
+         default : false
       }
    },
    data(){
@@ -52,6 +56,8 @@ export default {
          width : 500,
          height: 500,
          isHover : false,
+         displacement : {},
+         outside : {},
       }
    },
    computed :{
@@ -64,7 +70,7 @@ export default {
    },
    watch: {
       isHover(){
-         this.isHover ? this.show() : this.hide()
+         this.isHover ? this.show() : this.hide();
       }
    },
    methods: {
@@ -82,6 +88,18 @@ export default {
             easing: 'easeOutQuad',
             duration: 800,
          })
+
+         anime.set(this.$refs.outside, {
+            opacity: 0, 
+         });
+         anime({
+            targets: this.$refs.outside,
+            opacity : 1,
+            loop: false,
+            elasticity: 400,
+            easing: 'easeOutQuad',
+            duration: 800,
+         })
       },
       hide(){
          const els = [...this.$refs.title.querySelectorAll('span')]
@@ -93,11 +111,62 @@ export default {
             easing: 'easeOutQuad',
             duration: 800,
          });
+
+         anime({
+            targets: this.$refs.outside,
+            opacity : 0,
+            loop: false,
+            elasticity: 400,
+            easing: 'easeOutQuad',
+            duration: 800,
+         })
+
       }
    },
    created(){
       this.seed = Math.random()
       this.seed1 = Math.random()
+      this.displacement = {
+         transform : `translate(${Math.random()*150 - 80}px,${Math.random()*600-300}px)` 
+      }
+
+      let rand = Math.floor(Math.random() * 4 + 1);  // random int from 1 to 4
+
+      function getCSS(num){
+         switch(num){
+            case 1:
+               return {
+                  top: 0,
+                  right:0,
+               }
+               break;
+            case 2:
+               return {
+                  top:0,
+                  left:0,
+               }
+               break;
+            case 3:
+               return {
+                  bottom:0,
+                  left:0
+               }
+               break;
+            case 4:
+               return {
+                  bottom:0,
+                  right:0
+               }
+               break;
+         }
+      }
+
+
+      this.outside = {
+         ...getCSS(rand),
+         'background-image' : `url('/content${this.project.url}/assets/illu.svg')` ,
+         //'background': "red"
+      }
    },
    mounted(){
      
@@ -124,13 +193,22 @@ export default {
             delay : this.delay
          });
 
+
+         if(this.forceHover){
+            this.isHover = true;
+            this.show();
+         }
+
          //enter
-         this.$el.addEventListener('mouseenter', () => {this.isHover = true},{passive:true});
+         this.$el.addEventListener('mouseenter', () => this.isHover = true,{passive:true});
          this.$el.addEventListener('touchstart', () => this.isHover = true,{passive:true});
 
          //leave
-         this.$el.addEventListener('mouseleave', () =>this.isHover = false,{passive:true});
-         this.$el.addEventListener('touchend', () => this.isHover = false,{passive:true});
+         if(!this.forceHover){
+            this.$el.addEventListener('mouseleave', () =>this.isHover = false,{passive:true});
+            this.$el.addEventListener('touchend', () => this.isHover = false,{passive:true});
+         }
+        
       })
      
      
@@ -152,15 +230,20 @@ export default {
 
 .item {
 	position: relative;
-   width: 500px;
-   height: 500px;
+   width: 100%;
+   height: 100%;
 	max-width: 100%;
    cursor: pointer;
    display: inline-flex;
    justify-content: center;
    align-items: center;
    opacity: 0;
-
+   @media only screen and (max-width: 1200px) {
+     transform: translate(0,0) !important;
+   }
+   &__link{
+      position: relative;
+   }
    &__title{
       z-index: 99;
       position: absolute;
@@ -231,6 +314,16 @@ export default {
       text-align: center;
       letter-spacing: 0.15em;
       opacity: 0;
+   }
+   & .outside{
+      opacity: 0;
+      z-index: 99;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
    }
 }
 </style>

@@ -62,6 +62,7 @@ export default {
     overflow: scroll;
 }
 .page__inner{
-   
+   display: flex;
+   min-height: 100vh;
 }
 </style>

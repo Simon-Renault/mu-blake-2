@@ -11,7 +11,7 @@
               slot
          
             footer.footer
-               router-link( to="/") test
+              // router-link( :to="url") test
 </template>
 
 <script>
@@ -20,6 +20,7 @@ import {imageCrawler, extractInfos} from '@/js/helpers'
 import Vue from 'vue'
 
 export default {
+   props : ['url'],
    data(){
       return{
          baseContentUrl : '/content',

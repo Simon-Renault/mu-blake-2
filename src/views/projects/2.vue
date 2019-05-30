@@ -1,7 +1,6 @@
 <template lang="pug">
 
 div.content   
-    v-nav( right="/page/1" left="/page/3" top="/page/1" bottom="/page/3" key="p2")
 
     v-island.island.a(  key="kurosawas_grave" 
                         :project="projects['kurosawas_grave']"
@@ -14,6 +13,12 @@ div.content
     v-island.island.c(  key="GIF" 
                         :project="projects['gif']"
                         delay=300)
+
+    v-island.island.c(  key="CV" 
+                        :project="projects['cv']"
+                        delay=300)
+
+    v-nav( right="/page/1" left="/page/3" top="/page/1" bottom="/page/3" key="p2")
 
  
 </template>
@@ -34,19 +39,22 @@ export default {
 
 
 
-@media screen and (min-width : $medium){
-   .a{
-    top: 400px;
+
+
+.content{
+    margin: auto;
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    @media only screen and (min-width: 600px) {
+        grid-template-columns: repeat(2,1fr);
     }
-    .b{
-        top: 100px;
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4,1fr);
     }
-    .c{
-        top: 530px;
-    }
-    .island{
-        width: 25vw;
-        height: 25vw;
+
+    & .island{
+        //border: 1px solid red;
        
     }
 }

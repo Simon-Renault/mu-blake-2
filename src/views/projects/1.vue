@@ -2,12 +2,7 @@
 
 div.content  
     v-nav( right="/page/3" left="/page/2" top="/page/3" bottom="/page/2"  key="p1")
-    v-island.island.a(  key="kurosawas_grave" 
-                        :project="projects['kurosawas_grave']"
-                        delay=300)
-    v-island.island.c(  key="GIF" 
-                        :project="projects['gif']"
-                        delay=300)
+   
 
 </template>
 

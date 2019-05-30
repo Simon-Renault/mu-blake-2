@@ -1,16 +1,13 @@
 <template lang="pug">
     div.page.page-landing
         div.page__inner
-            div.logo(ref="logo")
-               
-                    
-
+            div.logo(ref="logo" :style="logoCss")
             h1.title(ref="title") Mu Blake
             div.actions(ref="actions")
                 div.language
                     button.ll.fr( @click="setLangFR" ref="lg"  :class="{'active':isFr}")
                         span Français
-                    //button.ll.en( @click="setLangEN" ref="lg2" :class="{'active':isEn}")
+                    button.ll.en( @click="setLangEN" ref="lg2" :class="{'active':isEn}")
                         span English
                 button.button.enter( @click="enter" ref="button")
                     span(v-if="isEn") ENTER
@@ -40,6 +37,14 @@ export default {
         },
         isEn(){
             return this.getLang === "en"
+        },
+        logoCss(){
+
+            let rand = Math.floor(Math.random() * 3 + 1);  // random int from 1 to 4
+
+            return {
+                'background-image' : `url('/img/kanji${rand}.png')` ,
+            }
         }
     },
     methods : {
@@ -142,7 +147,6 @@ export default {
         opacity: 0;
         width: 400px;
         height: 400px;
-        background-image: url('/img/kanji.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;

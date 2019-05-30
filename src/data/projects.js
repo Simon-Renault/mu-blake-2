@@ -4,7 +4,6 @@ export default {
         url : "/kurosawas_grave",
         cover : {
             backgroundImage : "/content/kurosawas_grave/assets/cover.png", 
-            cornerImage : "",
             islandModel : "3"
         },
         next : "/nyx"
@@ -14,19 +13,26 @@ export default {
         url : "/nyx",
         cover : {
             backgroundImage : "/content/nyx/assets/cover.png",
-            cornerImage : "",
             islandModel : "2"
         },
-        next : "/nyx"
+        next : "/kurosawas_grave"
     },
     gif : {
-        title : "GIF",
+        title : "SPLIT SCREEN & GIF",
         url : "/gif",
         cover : {
-            backgroundImage : "/img/texture1.png",
-            cornerImage : "",
+            backgroundImage : "/content/gif/assets/cover.jpg",
             islandModel : "5"
         },
-        next : "/nyx"
+        next : "/kurosawas_grave"
+    },
+    cv : {
+        title : "Bio",
+        url : "/cv",
+        cover : {
+            backgroundImage : "/content/cv/assets/cover.jpg",
+            islandModel : "3"
+        },
+        next : "/gif"
     },
 }

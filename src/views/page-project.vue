@@ -1,18 +1,19 @@
 <template lang="pug">
 div
-    v-project-content( )
+    v-project-content( :url="nextUrl" )
         div.content(v-html="html")
     div.left
         v-island.island(key="nyx" 
                         :project="project"
-                        delay=0)
+                        delay=0
+                        :forceHover="true")
 </template>
 
 <script>
 import projects from '@/data/projects.js'
 import axios from 'axios'
 import {mapGetters} from 'vuex'
-
+import islands from '@/components/island/data.js'
 
 export default {
     components : {
@@ -23,13 +24,17 @@ export default {
         return {
             projects,
             html: 'estt',
-            id : this.$route.params.id
+            id : this.$route.params.id,
+            projects,
         }
     },
     computed : {
         ...mapGetters(['getLang']),
         project(){
             return projects[this.id]
+        },
+        nextUrl(){
+            return `/project${this.projects[this.$route.params.id].next}`
         },
         url(){
             const project_id = this.$route.params.id
