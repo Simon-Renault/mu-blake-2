@@ -200,12 +200,12 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/kuro12.jpg"
   },
   {
-    "revision": "51c38b381cc0e3eabcfd003d7611e67c",
-    "url": "/content/kurosawas_grave/assets/kuro3.jpg"
-  },
-  {
     "revision": "f072c850f7c6cedea2b7b022d38fcd7d",
     "url": "/content/kurosawas_grave/assets/kuro4.jpg"
+  },
+  {
+    "revision": "51c38b381cc0e3eabcfd003d7611e67c",
+    "url": "/content/kurosawas_grave/assets/kuro3.jpg"
   },
   {
     "revision": "a7cee2c6895d6dd780b82eedd11a35f2",
