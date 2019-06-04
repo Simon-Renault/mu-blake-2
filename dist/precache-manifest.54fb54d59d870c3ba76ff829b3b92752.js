@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
     "revision": "32e40aa64ea1488bc3e06af94d2dbc09",
-    "url": "/content/nyx/assets/zo.JPG"
+    "url": "/content/nyx/assets/zo.jpg"
   },
   {
     "revision": "3c7f787f54bf236932290561c74e33dc",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-196af5e3.10b0d144.js"
   },
   {
-    "revision": "da0eae4bfd6ebdb01727701a2d1f633c",
-    "url": "/img/kanji2.png"
+    "revision": "1258e46828dbf7e796eb29d88517ae00",
+    "url": "/img/kanji1.png"
   },
   {
     "revision": "f4a65230dfbcdd14c881",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-ca1ca4c4.f834c11d.js"
   },
   {
-    "revision": "1258e46828dbf7e796eb29d88517ae00",
-    "url": "/img/kanji1.png"
+    "revision": "da0eae4bfd6ebdb01727701a2d1f633c",
+    "url": "/img/kanji2.png"
   },
   {
     "revision": "ec90010c3853a3865714",
@@ -101,7 +101,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "3600414a0b10acc1a00ebc2f25559daf",
-    "url": "/content/nyx/assets/ze.JPG"
+    "url": "/content/nyx/assets/ze.jpg"
   },
   {
     "revision": "1cd57d8f8abbffc43775e1e3d21db39c",
@@ -140,16 +140,16 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/Kurosawa_s grave.pdf"
   },
   {
-    "revision": "40040121621fe018e6986d46f633f43b",
-    "url": "/content/nyx/assets/g.JPG"
-  },
-  {
     "revision": "ac16885740116c0c5930a2cf13fc9cb5",
     "url": "/content/nyx/assets/h.JPG"
   },
   {
+    "revision": "40040121621fe018e6986d46f633f43b",
+    "url": "/content/nyx/assets/g.JPG"
+  },
+  {
     "revision": "bce781b13b94d0854fbfd197386c8084",
-    "url": "/content/nyx/assets/zh.JPG"
+    "url": "/content/nyx/assets/zh.jpg"
   },
   {
     "revision": "b3b8ae6e14d442963bb8b4d1b2caff96",
@@ -157,7 +157,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "3a420609e9860f2e3a89e898e25eafe7",
-    "url": "/content/nyx/assets/zm.JPG"
+    "url": "/content/nyx/assets/zm.jpg"
   },
   {
     "revision": "85e33b8682a8f84ec936aa4135f3d8e6",
@@ -168,12 +168,12 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/d.jpg"
   },
   {
-    "revision": "d99b86ad0b3d9e5cc8c71a1ff263ff41",
-    "url": "/content/nyx/assets/zd.JPG"
+    "revision": "3a9b847a0c5d57c25070998c75bccd1c",
+    "url": "/content/nyx/assets/zb.jpg"
   },
   {
-    "revision": "3a9b847a0c5d57c25070998c75bccd1c",
-    "url": "/content/nyx/assets/zb.JPG"
+    "revision": "d99b86ad0b3d9e5cc8c71a1ff263ff41",
+    "url": "/content/nyx/assets/zd.jpg"
   },
   {
     "revision": "79d51026500614e9eb9dc0fd9eca66ec",
@@ -185,7 +185,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "044e0fd31f78888f2117ccb38bfb1143",
-    "url": "/content/nyx/assets/zf.JPG"
+    "url": "/content/nyx/assets/zf.jpg"
   },
   {
     "revision": "db4eeb255930428cbb83b0f1e5ac84cd",
@@ -196,16 +196,16 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/kuro10.jpg"
   },
   {
-    "revision": "f072c850f7c6cedea2b7b022d38fcd7d",
-    "url": "/content/kurosawas_grave/assets/kuro4.jpg"
+    "revision": "f4c8fa23a9e96b733d420862478c65db",
+    "url": "/content/kurosawas_grave/assets/kuro12.jpg"
   },
   {
     "revision": "51c38b381cc0e3eabcfd003d7611e67c",
     "url": "/content/kurosawas_grave/assets/kuro3.jpg"
   },
   {
-    "revision": "f4c8fa23a9e96b733d420862478c65db",
-    "url": "/content/kurosawas_grave/assets/kuro12.jpg"
+    "revision": "f072c850f7c6cedea2b7b022d38fcd7d",
+    "url": "/content/kurosawas_grave/assets/kuro4.jpg"
   },
   {
     "revision": "a7cee2c6895d6dd780b82eedd11a35f2",
@@ -221,7 +221,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "4c10c1d13f0b1f8bf8b1b25356c3cf5d",
-    "url": "/content/nyx/assets/zk.JPG"
+    "url": "/content/nyx/assets/zk.jpg"
   },
   {
     "revision": "d858e754881c1ca98c78ca6aa567a56b",
@@ -236,8 +236,8 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/kuro6.jpg"
   },
   {
-    "revision": "3b359dc573db5b43bcf81317922408e9",
-    "url": "/content/nyx/assets/NYX.pdf"
+    "revision": "776019d950c7356e0a0e6bf9f3e5a5e5",
+    "url": "/content/nyx/assets/c.jpg"
   },
   {
     "revision": "d42e8c049c12c3709804b15666b52023",
@@ -252,12 +252,12 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/kuro7.jpg"
   },
   {
-    "revision": "776019d950c7356e0a0e6bf9f3e5a5e5",
-    "url": "/content/nyx/assets/c.jpg"
+    "revision": "3b359dc573db5b43bcf81317922408e9",
+    "url": "/content/nyx/assets/NYX.pdf"
   },
   {
-    "revision": "9c110f42ae04822d91bf9dd7c10421ec",
-    "url": "/assets/images/sample-04.png"
+    "revision": "1dafa7065b819dc913efb349faedac1c",
+    "url": "/assets/images/sample-03.png"
   },
   {
     "revision": "7f6a9e86c0007100655929fe48af0035",
@@ -308,12 +308,12 @@ self.__precacheManifest = [
     "url": "/content/cv/assets/illu.svg"
   },
   {
-    "revision": "1dafa7065b819dc913efb349faedac1c",
-    "url": "/assets/images/sample-03.png"
-  },
-  {
     "revision": "64be44092f0cd43b51a4f013d11bf848",
     "url": "/content/gif/assets/3.jpg"
+  },
+  {
+    "revision": "9c110f42ae04822d91bf9dd7c10421ec",
+    "url": "/assets/images/sample-04.png"
   },
   {
     "revision": "251d379d0becbcd8d6fdc528262797e3",
