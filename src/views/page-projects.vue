@@ -60,9 +60,11 @@ export default {
     height: 100vh;
     width: 100vw;
     overflow: scroll;
+     pointer-events: none;
 }
 .page__inner{
    display: flex;
    min-height: 100vh;
+   pointer-events: none;
 }
 </style>

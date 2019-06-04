@@ -238,6 +238,7 @@ export default {
    justify-content: center;
    align-items: center;
    opacity: 0;
+    pointer-events: none;
    @media only screen and (max-width: 1200px) {
      transform: translate(0,0) !important;
    }
@@ -269,6 +270,7 @@ export default {
       height: 80%;
       margin: 0 auto;
       color: white;
+       pointer-events: all;
       //border: 1px solid yellow;
    }
    &__clippath,

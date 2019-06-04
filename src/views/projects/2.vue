@@ -38,13 +38,11 @@ export default {
 
 
 
-
-
-
 .content{
     margin: auto;
     display:grid;
     width: 100%;
+    pointer-events: none;
     grid-template-columns: repeat(1,1fr);
     @media only screen and (min-width: 600px) {
         grid-template-columns: repeat(2,1fr);
