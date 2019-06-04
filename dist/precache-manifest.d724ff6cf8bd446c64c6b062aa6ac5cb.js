@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-196af5e3.10b0d144.js"
   },
   {
-    "revision": "cf9faa9375068f0b228a783c2a05eac6",
-    "url": "/img/kanji3.png"
+    "revision": "1258e46828dbf7e796eb29d88517ae00",
+    "url": "/img/kanji1.png"
   },
   {
     "revision": "f4a65230dfbcdd14c881",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-ca1ca4c4.f834c11d.js"
   },
   {
-    "revision": "1258e46828dbf7e796eb29d88517ae00",
-    "url": "/img/kanji1.png"
+    "revision": "cf9faa9375068f0b228a783c2a05eac6",
+    "url": "/img/kanji3.png"
   },
   {
     "revision": "ec90010c3853a3865714",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/ze.jpg"
   },
   {
-    "revision": "1cd57d8f8abbffc43775e1e3d21db39c",
-    "url": "/content/gif/fr.html"
+    "revision": "f2e9688d603e5a134578d1889765bd00",
+    "url": "/content/gif/en.html"
   },
   {
     "revision": "95e69342df990f9e5c252185a27703c9",
@@ -120,6 +120,10 @@ self.__precacheManifest = [
     "url": "/content/nyx/en.html"
   },
   {
+    "revision": "1cd57d8f8abbffc43775e1e3d21db39c",
+    "url": "/content/gif/fr.html"
+  },
+  {
     "revision": "ae42e1cab24f94ff653dcab42ab3784f",
     "url": "/content/nyx/fr.html"
   },
@@ -128,16 +132,12 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/zaa.png"
   },
   {
-    "revision": "801907c62ca077c645883cd700a74e9f",
-    "url": "/content/kurosawas_grave/assets/cover.png"
-  },
-  {
     "revision": "6ed94d1e9f54ff582d2d28fad79cc7a2",
     "url": "/content/kurosawas_grave/assets/illu.svg"
   },
   {
-    "revision": "e56db681b5a1329ddae71deac3961447",
-    "url": "/content/kurosawas_grave/assets/Kurosawa_s grave.pdf"
+    "revision": "801907c62ca077c645883cd700a74e9f",
+    "url": "/content/kurosawas_grave/assets/cover.png"
   },
   {
     "revision": "40040121621fe018e6986d46f633f43b",
@@ -160,24 +160,24 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/zm.jpg"
   },
   {
-    "revision": "9bf9298d1ae18f68fe97222bf9591ddc",
-    "url": "/content/nyx/assets/d.jpg"
-  },
-  {
     "revision": "85e33b8682a8f84ec936aa4135f3d8e6",
     "url": "/content/nyx/assets/e.jpg"
   },
   {
-    "revision": "3a9b847a0c5d57c25070998c75bccd1c",
-    "url": "/content/nyx/assets/zb.jpg"
+    "revision": "9bf9298d1ae18f68fe97222bf9591ddc",
+    "url": "/content/nyx/assets/d.jpg"
   },
   {
     "revision": "d99b86ad0b3d9e5cc8c71a1ff263ff41",
     "url": "/content/nyx/assets/zd.jpg"
   },
   {
-    "revision": "79d51026500614e9eb9dc0fd9eca66ec",
-    "url": "/content/nyx/assets/cover.png"
+    "revision": "3a9b847a0c5d57c25070998c75bccd1c",
+    "url": "/content/nyx/assets/zb.jpg"
+  },
+  {
+    "revision": "e56db681b5a1329ddae71deac3961447",
+    "url": "/content/kurosawas_grave/assets/Kurosawa_s grave.pdf"
   },
   {
     "revision": "00754465ba9d255dc33cadd20a110434",
@@ -188,12 +188,12 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/zf.jpg"
   },
   {
-    "revision": "db4eeb255930428cbb83b0f1e5ac84cd",
-    "url": "/content/kurosawas_grave/assets/kuro11.jpg"
+    "revision": "79d51026500614e9eb9dc0fd9eca66ec",
+    "url": "/content/nyx/assets/cover.png"
   },
   {
-    "revision": "3c6588f2a9acea5b540f4e74695fc450",
-    "url": "/content/kurosawas_grave/assets/kuro10.jpg"
+    "revision": "db4eeb255930428cbb83b0f1e5ac84cd",
+    "url": "/content/kurosawas_grave/assets/kuro11.jpg"
   },
   {
     "revision": "f4c8fa23a9e96b733d420862478c65db",
@@ -212,16 +212,16 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/b.jpg"
   },
   {
+    "revision": "3c6588f2a9acea5b540f4e74695fc450",
+    "url": "/content/kurosawas_grave/assets/kuro10.jpg"
+  },
+  {
     "revision": "b629010d4d456f2a52cf9dcb3de19646",
     "url": "/content/kurosawas_grave/assets/kuro9.jpg"
   },
   {
     "revision": "f4d644140b10af07a5927f24d2fa7350",
     "url": "/content/kurosawas_grave/assets/kuro5.jpg"
-  },
-  {
-    "revision": "4c10c1d13f0b1f8bf8b1b25356c3cf5d",
-    "url": "/content/nyx/assets/zk.jpg"
   },
   {
     "revision": "d858e754881c1ca98c78ca6aa567a56b",
@@ -236,8 +236,8 @@ self.__precacheManifest = [
     "url": "/content/kurosawas_grave/assets/kuro6.jpg"
   },
   {
-    "revision": "3b359dc573db5b43bcf81317922408e9",
-    "url": "/content/nyx/assets/NYX.pdf"
+    "revision": "4c10c1d13f0b1f8bf8b1b25356c3cf5d",
+    "url": "/content/nyx/assets/zk.jpg"
   },
   {
     "revision": "d42e8c049c12c3709804b15666b52023",
@@ -256,28 +256,28 @@ self.__precacheManifest = [
     "url": "/content/nyx/assets/c.jpg"
   },
   {
-    "revision": "9c110f42ae04822d91bf9dd7c10421ec",
-    "url": "/assets/images/sample-04.png"
+    "revision": "3b359dc573db5b43bcf81317922408e9",
+    "url": "/content/nyx/assets/NYX.pdf"
   },
   {
-    "revision": "7f6a9e86c0007100655929fe48af0035",
-    "url": "/assets/images/sample-02.png"
-  },
-  {
-    "revision": "c55e4506b288023e61d12d3c97595bd7",
-    "url": "/content/gif/assets/1.jpg"
+    "revision": "590f1a77fbf85e331981fe6657fb95c5",
+    "url": "/assets/cursors/final.svg"
   },
   {
     "revision": "222421e20766c76db5fc72f38bf3ada8",
     "url": "/content/cv/assets/illu.svg"
   },
   {
-    "revision": "f64eeb61b179e5db4c9dbffb1f1b6cf1",
-    "url": "/content/cv/fr.html"
+    "revision": "e7ae566064ca8c74cb3178e83a26441b",
+    "url": "/content/gif/assets/illu.svg"
   },
   {
-    "revision": "8386b1460f3e454817b70a9890c69754",
-    "url": "/content/cv/assets/cover.jpg"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/content/cv/en.html"
+  },
+  {
+    "revision": "251d379d0becbcd8d6fdc528262797e3",
+    "url": "/content/cv/assets/mu_blake_cv.pdf"
   },
   {
     "revision": "78e720bed494ef72ac1e65f9304e990f",
@@ -288,44 +288,48 @@ self.__precacheManifest = [
     "url": "/content/gif/assets/2.jpg"
   },
   {
-    "revision": "5f491e86721d441561e5ecf26825ab7a",
-    "url": "/assets/images/sample-05.png"
+    "revision": "f64eeb61b179e5db4c9dbffb1f1b6cf1",
+    "url": "/content/cv/fr.html"
   },
   {
-    "revision": "f2e9688d603e5a134578d1889765bd00",
-    "url": "/content/gif/en.html"
-  },
-  {
-    "revision": "879ce1b16c74d2426e73ac9ba9bad12e",
-    "url": "/content/gif/assets/4.jpg"
+    "revision": "a5dfea4f3d8dfb6aefbe660aa2bd74af",
+    "url": "/content/gif/assets/cover.jpg"
   },
   {
     "revision": "9117ba6134542218357cbd6180cb5140",
     "url": "/content/gif/assets/5.jpg"
   },
   {
-    "revision": "d41d8cd98f00b204e9800998ecf8427e",
-    "url": "/content/cv/en.html"
+    "revision": "879ce1b16c74d2426e73ac9ba9bad12e",
+    "url": "/content/gif/assets/4.jpg"
+  },
+  {
+    "revision": "c55e4506b288023e61d12d3c97595bd7",
+    "url": "/content/gif/assets/1.jpg"
   },
   {
     "revision": "64be44092f0cd43b51a4f013d11bf848",
     "url": "/content/gif/assets/3.jpg"
   },
   {
+    "revision": "8386b1460f3e454817b70a9890c69754",
+    "url": "/content/cv/assets/cover.jpg"
+  },
+  {
+    "revision": "5f491e86721d441561e5ecf26825ab7a",
+    "url": "/assets/images/sample-05.png"
+  },
+  {
+    "revision": "9c110f42ae04822d91bf9dd7c10421ec",
+    "url": "/assets/images/sample-04.png"
+  },
+  {
     "revision": "1dafa7065b819dc913efb349faedac1c",
     "url": "/assets/images/sample-03.png"
   },
   {
-    "revision": "251d379d0becbcd8d6fdc528262797e3",
-    "url": "/content/cv/assets/mu_blake_cv.pdf"
-  },
-  {
-    "revision": "e7ae566064ca8c74cb3178e83a26441b",
-    "url": "/content/gif/assets/illu.svg"
-  },
-  {
-    "revision": "a5dfea4f3d8dfb6aefbe660aa2bd74af",
-    "url": "/content/gif/assets/cover.jpg"
+    "revision": "7f6a9e86c0007100655929fe48af0035",
+    "url": "/assets/images/sample-02.png"
   },
   {
     "revision": "b20253a86962d304629926f5379a2b54",
@@ -334,10 +338,6 @@ self.__precacheManifest = [
   {
     "revision": "24835dfffbadb54f7415ab55457dccfc",
     "url": "/assets/cursors/final@2x.png"
-  },
-  {
-    "revision": "590f1a77fbf85e331981fe6657fb95c5",
-    "url": "/assets/cursors/final.svg"
   },
   {
     "revision": "998e03477b5e683911af386db924a8f1",
