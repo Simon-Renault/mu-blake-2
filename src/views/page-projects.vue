@@ -59,12 +59,15 @@ export default {
     max-height: 100vh;
     height: 100vh;
     width: 100vw;
-    overflow: scroll;
-     pointer-events: none;
+    overflow: scroll !important;
+    max-width: 100vw;
+    pointer-events: none;
 }
 .page__inner{
-   display: flex;
-   min-height: 100vh;
-   pointer-events: none;
+    display: flex;
+    min-height: 100vh;
+    pointer-events: none;
+    max-width: 100vw;
+     overflow: scroll !important;
 }
 </style>

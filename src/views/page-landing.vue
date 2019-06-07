@@ -134,6 +134,7 @@ export default {
     z-index: 99999;
     position: relative;
     color : $color-white;
+    max-width: 100vw;
     //background: #000;
     &__inner{
         z-index: 99999;

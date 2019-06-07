@@ -52,7 +52,11 @@ export default {
         font-size: 1rem;
         stroke: white;
         stroke-width: 3px;
+
+        border : 1px solid red;
         
+        pointer-events: all;
+
         & > svg{
             stroke: white;
             transform: rotate(-90deg);
@@ -60,6 +64,17 @@ export default {
         }
         &:hover > svg{
             transform: rotate(-90deg) translate(-5px);
+        }
+        &:after{
+            top: -20px;
+            z-index: -1;
+            content : '';
+            position: absolute;
+            background: rgba(0,0,0,1);
+            height: 120px;
+            width: 120px;
+            border-radius: 50% 50% 0px 0px;
+            border: 2px solid rgba(255,255,255,0.3);
         }
     }
     .top{

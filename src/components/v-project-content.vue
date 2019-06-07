@@ -96,13 +96,15 @@ $footer-height : 120px;
    font-size: 2rem;
 }
 .scroll{
-  top:0;
-  height: 100%;
-  overflow: scroll;
-  &__inner{
-     position: relative;
-     padding-bottom: $footer-height + 100px;
-     min-height: 100vh;
-  }
+   top:0;
+   height: 100%;
+   overflow: scroll;
+   max-width: 100vw;
+   &__inner{
+      position: relative;
+      padding-bottom: $footer-height + 100px;
+      min-height: 100vh;
+      max-width: 100vw;
+   }
 }
 </style>
