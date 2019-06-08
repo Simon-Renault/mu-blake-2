@@ -61,13 +61,15 @@ export default {
     width: 100vw;
     overflow: scroll !important;
     max-width: 100vw;
-    pointer-events: none;
+    @media screen and (min-width : $medium){
+        pointer-events: none;
+    } 
 }
 .page__inner{
     display: flex;
     min-height: 100vh;
     pointer-events: none;
     max-width: 100vw;
-     overflow: scroll !important;
+    overflow: scroll !important;
 }
 </style>

@@ -85,10 +85,10 @@ export default {
     justify-content: center;
     align-items: center;
     display: none;
-     pointer-events: none;
-   @media screen and (min-width : $medium){
-      display: flex;
-   } 
+    pointer-events: none;
+    @media screen and (min-width : $medium){
+        display: flex;
+    } 
 }
 
 .content{

@@ -2,7 +2,7 @@
     div.page.page-landing
         div.page__inner
             div.logo(ref="logo" :style="logoCss")
-            h1.title(ref="title") Mu Blake
+            h1.title(ref="title") Matthieu Blake
             div.actions(ref="actions")
                 div.language
                     button.ll.fr( @click="setLangFR" ref="lg"  :class="{'active':isFr}")

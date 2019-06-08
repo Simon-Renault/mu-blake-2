@@ -1,5 +1,6 @@
 <template lang="pug">
     nav.nav
+        router-link(:to="{path:'/'}").logo
         router-link(:to="top").nav__item.top 
             icon.arrow(name="arrow" width="26px" height="26px" )
         router-link(:to="bottom").nav__item.bottom 
@@ -129,5 +130,18 @@ export default {
             
         }
     }
+
+    .logo{
+        pointer-events: all;
+        left:30px;
+        position: fixed;
+        top:20px;
+        width: 200px;
+        height: 100px;
+        background-image: url('/img/logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
+
 </style>
