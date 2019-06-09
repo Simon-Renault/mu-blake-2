@@ -152,9 +152,6 @@ export default {
         background-repeat: no-repeat;
         background-position: center center;
         margin: 0 0 30px 0;
-       
-        
-       
     }
     & .title{
         opacity: 0;
@@ -184,6 +181,7 @@ export default {
     line-height: initial;
     margin: 0;
     margin: 30px auto;
+    pointer-events: all;
     &:hover{
         background: rgba(255,255,255,0.4);
     }
@@ -197,6 +195,7 @@ export default {
     color: white;
     background: transparent;
     margin: 10px;
+    pointer-events: all;
     &.active{
         border-bottom: 2px solid white;
     }

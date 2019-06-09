@@ -59,8 +59,10 @@ export default {
     max-height: 100vh;
     height: 100vh;
     width: 100vw;
-    overflow: scroll !important;
     max-width: 100vw;
+    @media screen and (max-width : $medium){
+        overflow: scroll !important;
+    } 
     @media screen and (min-width : $medium){
         pointer-events: none;
     } 
@@ -70,6 +72,8 @@ export default {
     min-height: 100vh;
     pointer-events: none;
     max-width: 100vw;
-    overflow: scroll !important;
+    @media screen and (max-width : $medium){
+        overflow: scroll !important;
+    } 
 }
 </style>
