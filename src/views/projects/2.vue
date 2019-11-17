@@ -6,8 +6,8 @@ div.content
                         :project="projects['kurosawas_grave']"
                         delay=300)
 
-    v-island.island.b(  key="nyx" 
-                        :project="projects['nyx']"
+    v-island.island.b(  key="hotel" 
+                        :project="projects['hotel']"
                         delay=300)
                         
     v-island.island.c(  key="GIF" 

@@ -56,17 +56,21 @@ export default {
          width : 500,
          height: 500,
          isHover : false,
-         displacement : {},
-         outside : {},
+         outside : {}
       }
    },
    computed :{
-      path(){
-         return `/project${this.project.url}`
-      },
-      island(){
-         return islands[this.project.cover.islandModel]
-      }
+        path(){
+            return `/project${this.project.url}`
+        },
+        island(){
+            return islands[this.project.cover.islandModel]
+        },
+        displacement(){
+            return !this.forceHover 
+                ? {transform:`translate(${Math.random()*150 - 80}px,${Math.random()*600-300}px)` }
+                : {transform:`translate(0,0)` }
+        }
    },
    watch: {
       isHover(){
@@ -124,49 +128,42 @@ export default {
       }
    },
    created(){
-      this.seed = Math.random()
-      this.seed1 = Math.random()
-      this.displacement = {
-         transform : `translate(${Math.random()*150 - 80}px,${Math.random()*600-300}px)` 
-      }
+        let rand = Math.floor(Math.random() * 4 + 1);  // random int from 1 to 4
 
-      let rand = Math.floor(Math.random() * 4 + 1);  // random int from 1 to 4
-
-      function getCSS(num){
-         switch(num){
-            case 1:
-               return {
-                  top: 0,
-                  right:0,
-               }
-               break;
-            case 2:
-               return {
-                  top:0,
-                  left:0,
-               }
-               break;
-            case 3:
-               return {
-                  bottom:0,
-                  left:0
-               }
-               break;
-            case 4:
-               return {
-                  bottom:0,
-                  right:0
-               }
-               break;
-         }
-      }
+        function getCSS(num){
+            switch(num){
+                case 1:
+                return {
+                    top: 0,
+                    right:0,
+                }
+                break;
+                case 2:
+                return {
+                    top:0,
+                    left:0,
+                }
+                break;
+                case 3:
+                return {
+                    bottom:0,
+                    left:0
+                }
+                break;
+                case 4:
+                return {
+                    bottom:0,
+                    right:0
+                }
+                break;
+            }
+        }
 
 
-      this.outside = {
-         ...getCSS(rand),
-         'background-image' : `url('/content${this.project.url}/assets/illu.svg')` ,
-         //'background': "red"
-      }
+        this.outside = {
+            ...getCSS(rand),
+            'background-image' : `url('/content${this.project.url}/assets/illu.svg')` ,
+        }
    },
    mounted(){
      

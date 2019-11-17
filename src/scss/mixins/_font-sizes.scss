@@ -56,12 +56,12 @@
 
 
   @include breakpoint($medium) {
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 0.9;
   }
 
   @include breakpoint($x-large) {
-    font-size: 9rem;
+    font-size: 5rem;
   }
 }
 
