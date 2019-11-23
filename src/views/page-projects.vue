@@ -32,12 +32,10 @@ export default {
         }
     },
     methods: {
-         enterAnim(done) {
-            console.log('enter')
+        enterAnim(done) {
             done()
         },
         leaveAnim(done){
-            console.log('leave')
             done()
         }
     },

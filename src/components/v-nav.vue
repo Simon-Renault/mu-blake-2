@@ -1,10 +1,10 @@
 <template lang="pug">
     nav.nav
         router-link(:to="{path:'/'}").logo
-        router-link(:to="top").nav__item.top 
-            icon.arrow(name="arrow" width="26px" height="26px" )
-        router-link(:to="bottom").nav__item.bottom 
-            icon.arrow(name="arrow" width="26px" height="26px" )
+        //- router-link(:to="top").nav__item.top 
+        //-     icon.arrow(name="arrow" width="26px" height="26px" )
+        //- router-link(:to="bottom").nav__item.bottom 
+        //-     icon.arrow(name="arrow" width="26px" height="26px" )
         router-link(:to="right").nav__item.left 
             icon.arrow(name="arrow" width="26px" height="26px" )
         router-link(:to="left").nav__item.right 
@@ -43,8 +43,12 @@ export default {
     &__item{
         z-index: 99999999;
 
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
+        @media screen and (min-width : $medium){
+            height: 50px;
+            width: 50px;
+        } 
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -53,8 +57,6 @@ export default {
         font-size: 1rem;
         stroke: white;
         stroke-width: 3px;
-
-        border : 1px solid red;
         
         pointer-events: all;
 
@@ -71,11 +73,16 @@ export default {
             z-index: -1;
             content : '';
             position: absolute;
-            background: rgba(0,0,0,1);
-            height: 120px;
-            width: 120px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter:  blur(5px);
+            height: 80px;
+            width: 80px;
+            @media screen and (min-width : $medium){
+                height: 120px;
+                width: 120px;
+            } 
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 50% 50% 0px 0px;
-            border: 2px solid rgba(255,255,255,0.3);
         }
     }
     .top{

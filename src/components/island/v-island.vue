@@ -39,25 +39,25 @@ export default {
       'v-blob-path' : Vpath
    },
    props : {
-      project : {
-         required : false,
-         default: 1500,
-         type: Object
-      },
-      delay : {
-         default : 1000,
-      },
-      forceHover : {
-         default : false
-      }
+        project : {
+            required : false,
+            default: 1500,
+            type: Object
+        },
+        delay : {
+            default : 1000,
+        },
+        forceHover : {
+            default : false
+        }
    },
    data(){
-      return{
-         width : 500,
-         height: 500,
-         isHover : false,
-         outside : {}
-      }
+        return{
+            width : 500,
+            height: 500,
+            isHover : false,
+            outside : {}
+        }
    },
    computed :{
         path(){
@@ -70,62 +70,65 @@ export default {
             return !this.forceHover 
                 ? {transform:`translate(${Math.random()*150 - 80}px,${Math.random()*600-300}px)` }
                 : {transform:`translate(0,0)` }
+        },
+        isMobile(){
+            return window.matchMedia('(max-width : 1000px)').matches
         }
    },
    watch: {
-      isHover(){
-         this.isHover ? this.show() : this.hide();
-      }
+        isHover(){
+            this.isHover ? this.show() : this.hide();
+        }
    },
    methods: {
-      show(){
-         const els = [...this.$refs.title.querySelectorAll('span')]
+        show(){
+            const els = [...this.$refs.title.querySelectorAll('span')]
 
-         anime.set(els, {
-            opacity: 0, 
-         });
-         anime({
-            targets: els,
-            opacity : 1,
-            loop: false,
-            elasticity: 400,
-            easing: 'easeOutQuad',
-            duration: 800,
-         })
+            anime.set(els, {
+                opacity: 0, 
+            });
+            anime({
+                targets: els,
+                opacity : 1,
+                loop: false,
+                elasticity: 400,
+                easing: 'easeOutQuad',
+                duration: 800,
+            })
 
-         anime.set(this.$refs.outside, {
-            opacity: 0, 
-         });
-         anime({
-            targets: this.$refs.outside,
-            opacity : 1,
-            loop: false,
-            elasticity: 400,
-            easing: 'easeOutQuad',
-            duration: 800,
-         })
-      },
-      hide(){
-         const els = [...this.$refs.title.querySelectorAll('span')]
-         anime({
-            targets: els,
-            opacity : 0,
-            loop: false,
-            elasticity: 400,
-            easing: 'easeOutQuad',
-            duration: 800,
-         });
+            anime.set(this.$refs.outside, {
+                opacity: 0, 
+            });
+            anime({
+                targets: this.$refs.outside,
+                opacity : 1,
+                loop: false,
+                elasticity: 400,
+                easing: 'easeOutQuad',
+                duration: 800,
+            })
+        },
+        hide(){
+            const els = [...this.$refs.title.querySelectorAll('span')]
+            anime({
+                targets: els,
+                opacity : 0,
+                loop: false,
+                elasticity: 400,
+                easing: 'easeOutQuad',
+                duration: 800,
+            });
 
-         anime({
-            targets: this.$refs.outside,
-            opacity : 0,
-            loop: false,
-            elasticity: 400,
-            easing: 'easeOutQuad',
-            duration: 800,
-         })
+            anime({
+                targets: this.$refs.outside,
+                opacity : 0,
+                loop: false,
+                elasticity: 400,
+                easing: 'easeOutQuad',
+                duration: 800,
+            })
 
-      }
+        }
    },
    created(){
         let rand = Math.floor(Math.random() * 4 + 1);  // random int from 1 to 4
@@ -182,16 +185,16 @@ export default {
          });
 
          anime({
+            delay: Math.round(Math.random() * 800),
             targets: [this.$el],
             opacity : 1,
             translateY: 0,
             easing: 'easeOutQuad',
             duration: 1000,
-            delay : this.delay
          });
 
 
-         if(this.forceHover){
+         if(this.forceHover || this.isMobile){
             this.isHover = true;
             this.show();
          }
@@ -201,7 +204,7 @@ export default {
          this.$el.addEventListener('touchstart', () => this.isHover = true,{passive:true});
 
          //leave
-         if(!this.forceHover){
+         if(!this.forceHover && !this.isMobile){
             this.$el.addEventListener('mouseleave', () =>this.isHover = false,{passive:true});
             this.$el.addEventListener('touchend', () => this.isHover = false,{passive:true});
          }
@@ -226,7 +229,7 @@ export default {
 
 
 .item {
-	position: relative;
+   position: relative;
    width: 100%;
    height: 100%;
 	max-width: 100%;
@@ -237,7 +240,10 @@ export default {
    opacity: 0;
     pointer-events: none;
    @media only screen and (max-width: 1200px) {
-     transform: translate(0,0) !important;
+        width: 70%;
+        height: 70%;
+        margin: 100px auto;
+        transform: translate(0,0) !important;
    }
    &__link{
       position: relative;
@@ -315,14 +321,18 @@ export default {
       opacity: 0;
    }
    & .outside{
-      opacity: 0;
-      z-index: 99;
-      height: 200px;
-      width: 200px;
-      position: absolute;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
+        opacity: 0;
+        z-index: 99;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @media only screen and (max-width: 1200px) {
+            height: 100px;
+            width: 100px;
+        }
    }
 }
 </style>

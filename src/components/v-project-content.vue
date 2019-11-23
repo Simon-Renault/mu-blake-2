@@ -1,17 +1,14 @@
 <template lang="pug">
    main.main.project-content
-      header.header
-         a(@click.prevent="$router.go(-1)")
-            icon.close(name="close" width="26px" height="26px" )
+        header.header
+            a(@click.prevent="$router.go(-1)")
+                icon.close(name="close" width="26px" height="26px" )
 
-      .scroll
-         .scroll__inner
-            div.text-content(ref="content")
-              
-              slot
+        .scroll
+            .scroll__inner
+                div.text-content(ref="content")
+                    slot
          
-            footer.footer
-              // router-link( :to="url") test
 </template>
 
 <script>
@@ -58,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$header-height : 40px;
+$header-height : 60px;
 $footer-height : 120px;
 .project-content{
    position: relative;
@@ -81,7 +78,9 @@ $footer-height : 120px;
    background: transparent;
    align-items: center;
    justify-content: flex-end;
-   padding: 2rem 2rem 0 0;
+   padding: 20px;
+   background-color: rgba(0,0,0,0.1);
+   backdrop-filter: blur(10px);
 }
 .footer{
    position: absolute;
@@ -102,6 +101,7 @@ $footer-height : 120px;
    max-width: 100vw;
    &__inner{
       position: relative;
+      padding-top: $header-height;
       padding-bottom: $footer-height + 100px;
       min-height: 100vh;
       max-width: 100vw;
