@@ -1,8 +1,8 @@
 <template lang="pug">
 
-.item( :style="displacement")
+.item( :style="displacement") 
    router-link.item__link( :to="path")
-      h2.item__title(ref="title") {{project.title}}
+      h2.item__title(   ) {{title}} 
       div.outside( ref="outside" :style="outside")
       svg.item__svg( :width="width" 
                      :height="height" 
@@ -27,10 +27,11 @@
 import Vdeco from '@/components/island/v-blob-deco'
 import Vimage from '@/components/island/v-blob-image'
 import Vpath from '@/components/island/v-blob-path'
-import charming from 'charming'
+//import charming from 'charming'
 import anime from 'animejs'
 import islands from '@/components/island/data.js'
 import {clamp, lerp, map, mod, random,} from '@/js/helpers'
+import {mapGetters} from 'vuex'
 
 export default {
    components :{
@@ -60,6 +61,10 @@ export default {
         }
    },
    computed :{
+        ...mapGetters(['getLang']),
+        title(){
+            return this.getLang === 'en' ? this.project.title_en : this.project.title
+        },
         path(){
             return `/project${this.project.url}`
         },
@@ -82,19 +87,19 @@ export default {
    },
    methods: {
         show(){
-            const els = [...this.$refs.title.querySelectorAll('span')]
+            //const els = [...this.$refs.title.querySelectorAll('span')]
 
-            anime.set(els, {
-                opacity: 0, 
-            });
-            anime({
-                targets: els,
-                opacity : 1,
-                loop: false,
-                elasticity: 400,
-                easing: 'easeOutQuad',
-                duration: 800,
-            })
+            // anime.set(els, {
+            //     opacity: 0, 
+            // });
+            // anime({
+            //     targets: els,
+            //     opacity : 1,
+            //     loop: false,
+            //     elasticity: 400,
+            //     easing: 'easeOutQuad',
+            //     duration: 800,
+            // })
 
             anime.set(this.$refs.outside, {
                 opacity: 0, 
@@ -109,15 +114,15 @@ export default {
             })
         },
         hide(){
-            const els = [...this.$refs.title.querySelectorAll('span')]
-            anime({
-                targets: els,
-                opacity : 0,
-                loop: false,
-                elasticity: 400,
-                easing: 'easeOutQuad',
-                duration: 800,
-            });
+            // const els = [...this.$refs.title.querySelectorAll('span')]
+            // anime({
+            //     targets: els,
+            //     opacity : 0,
+            //     loop: false,
+            //     elasticity: 400,
+            //     easing: 'easeOutQuad',
+            //     duration: 800,
+            // });
 
             anime({
                 targets: this.$refs.outside,
@@ -172,10 +177,10 @@ export default {
      
       this.$nextTick(()=> {
 
-         //charming the title
-         charming(this.$refs.title,{
-            classPrefix: 'letter'
-         })
+        //  //charming the title
+        //  charming(this.$refs.title,{
+        //     classPrefix: 'letter'
+        //  })
          
          this.hide();
          

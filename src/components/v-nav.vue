@@ -1,6 +1,9 @@
 <template lang="pug">
     nav.nav
-        router-link(:to="{path:'/'}").logo
+        router-link(:to="{path:'/'}" ).logo
+        div.lang
+            div( @click="setLangFR") Fr
+            div( @click="setLangEN") En
         //- router-link(:to="top").nav__item.top 
         //-     icon.arrow(name="arrow" width="26px" height="26px" )
         //- router-link(:to="bottom").nav__item.bottom 
@@ -14,6 +17,7 @@
 
 <script>
 import '@/compiled-icons'
+import { mapMutations, mapGetters} from 'vuex'
 
 export default {
     props : {
@@ -33,11 +37,48 @@ export default {
             type : String,
             default : "/"
         }
+    },
+    computed: {
+           ...mapGetters(['getLang']),
+        isFr(){
+            return this.getLang === "fr"
+        },
+        isEn(){
+            return this.getLang === "en"
+        },
+    },
+    methods : {
+        ...mapMutations(['setLang']),
+        setLangFR(){
+            console.log('heyyy')
+            this.setLang( 'fr' )
+            localStorage.setItem('lang','fr');
+        },
+        setLangEN(){
+             console.log('heyyy')
+            this.setLang( 'en' )
+            localStorage.setItem('lang','en');
+        },
     }
 }
 </script>
 
 <style lang="scss" scoped>
+.lang{
+     z-index: 99999999;
+    display:flex;
+    font-size:20px;
+    color: white;
+    position: fixed;
+    top:20px;
+    right: 20px;
+      pointer-events: all;
+    & > div {
+        margin:  0 0 0 20px;
+        z-index: 9999;
+    }
+
+}
 .nav{
     z-index: 99999999;
     &__item{

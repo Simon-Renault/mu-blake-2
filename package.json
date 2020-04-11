@@ -1,15 +1,10 @@
 {
   "name": "mu",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "icons": "vsvg -s ./svg-icons -t ./src/compiled-icons",
-    "electron:build": "vue-cli-service electron:build",
-    "electron:serve": "vue-cli-service electron:serve",
-    "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "icons": "vsvg -s ./svg-icons -t ./src/compiled-icons"
   },
   "dependencies": {
     "anime": "^0.1.2",
@@ -17,8 +12,10 @@
     "axios": "^0.18.0",
     "browser-detect": "^0.2.28",
     "charming": "^2.2.5",
+    "core-js": "^3.6.5",
     "glslify": "^7.0.0",
     "gsap": "^2.0.2",
+    "jimp": "^0.10.0",
     "register-service-worker": "^1.5.2",
     "three": "^0.101.1",
     "vue": "^2.5.22",
@@ -31,10 +28,8 @@
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "electron": "^4.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
-    "vue-cli-plugin-electron-builder": "^1.1.2",
     "vue-cli-plugin-pug": "^1.0.7",
     "vue-cli-plugin-scss-base": "^0.1.10",
     "vue-template-compiler": "^2.5.21"

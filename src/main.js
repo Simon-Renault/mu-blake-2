@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import './registerServiceWorker'
 import VueSVGIcon from 'vue-svgicon'
 
-Vue.config.productionTip = true
+
+Vue.config.productionTip = false
 Vue.use(VueSVGIcon, {tagName: 'icon'})
 
 import layer from '@/components/v-layer.vue'

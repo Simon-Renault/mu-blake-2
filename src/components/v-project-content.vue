@@ -13,8 +13,8 @@
 
 <script>
 import '@/compiled-icons'
-import {imageCrawler, extractInfos} from '@/js/helpers'
-import Vue from 'vue'
+//import {imageCrawler, extractInfos} from '@/js/helpers'
+//import Vue from 'vue'
 
 export default {
    props : ['url'],
@@ -26,30 +26,25 @@ export default {
       }
    },
    methods: {
-      generateImgs(img){
-         const data = extractInfos(img)
-         return new Vue({
-            template : ` <v-image-loader :src="src" :alt="alt" :class="type" ></v-image-loader>`,
-            data(){
-               return {
-                  ...data
-               }
-            },
-         }).$mount(img)
-      },
-      fetchContent(){
-
-
-
-      },
-      displayImages(){
-         this.$nextTick(()=> {
-            imageCrawler(this.$refs.content,".lazy-image",this.generateImgs)
-         })
-      }
+    //   generateImgs(img){
+    //      const data = extractInfos(img)
+    //      return new Vue({
+    //         template : ` <v-image-loader :src="src" :alt="alt" :class="type" ></v-image-loader>`,
+    //         data(){
+    //            return {
+    //               ...data
+    //            }
+    //         },
+    //      }).$mount(img)
+    //   },
+    //   displayImages(){
+    //      this.$nextTick(()=> {
+    //         imageCrawler(this.$refs.content,".lazy-image",this.generateImgs)
+    //      })
+    //   }
    },
    mounted(){
-      this.displayImages();
+      //this.displayImages();
    }
 }
 </script>
@@ -79,8 +74,6 @@ $footer-height : 120px;
    align-items: center;
    justify-content: flex-end;
    padding: 20px;
-   background-color: rgba(0,0,0,0.1);
-   backdrop-filter: blur(10px);
 }
 .footer{
    position: absolute;

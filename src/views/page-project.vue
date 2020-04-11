@@ -10,7 +10,7 @@ div
 </template>
 
 <script>
-import projects from '@/data/projects.js'
+import projects from '@/data/projects_1.js'
 import axios from 'axios'
 import {mapGetters} from 'vuex'
 import islands from '@/components/island/data.js'
@@ -23,7 +23,7 @@ export default {
     data(){
         return {
             projects,
-            html: 'estt',
+            html: '',
             id : this.$route.params.id,
             projects,
         }
@@ -49,18 +49,11 @@ export default {
     },
     methods: {
         fetchContent(){
-            // Make a request for a user with a given ID
             axios.get(this.url.fr)
                 .then(response =>{
                     this.html = response.data
                     this.$refs.render.innerHTML = this.html
                 })
-                .catch(error =>{
-
-                })
-                .then( () =>{
-             
-                });
         },
         enterAnim(done) {
             done()
