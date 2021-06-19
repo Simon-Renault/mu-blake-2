@@ -2,6 +2,7 @@
 div
     v-project-content( :url="nextUrl" )
         div.content(v-html="html")
+        v-accordion( v-if="project.entretiens" :content="project.entretiens")
     div.left
         v-island.island(key="nyx" 
                         :project="project"
@@ -14,11 +15,13 @@ import projects from '@/data/projects_1.js'
 import axios from 'axios'
 import {mapGetters} from 'vuex'
 import islands from '@/components/island/data.js'
+import accordion from '@/components/v-accordion'
 
 export default {
     components : {
         'v-project-content' : () => import('@/components/v-project-content.vue'),
         'v-island' : () => import('@/components/island/v-island.vue'),
+        'v-accordion' : accordion
     },
     data(){
         return {

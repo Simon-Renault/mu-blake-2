@@ -67,6 +67,20 @@ export default {
             backgroundImage : "/content/cv/assets/cover.jpg",
             islandModel : "1"
         },
+        entretiens : [
+            {
+                title : 'Antoine de Baecque',
+                file : 'antoine_de_beacque.html',
+            },
+            {
+                title : 'Éric Rondepierre',
+                file : 'rondepierre.html',
+            },
+            {
+                title : 'Noël Herpe',
+                file : 'noel_herpe.html',
+            }
+        ],
         next : "/gif"
     },
     shisha_no_sho : {

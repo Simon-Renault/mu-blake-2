@@ -2,8 +2,8 @@
     nav.nav
         router-link(:to="{path:'/'}" ).logo
         div.lang
-            div( @click="setLangFR") Fr
-            div( @click="setLangEN") En
+            div( @click="setLangFR" :class="{selected:isFr}") Fr
+            div( @click="setLangEN" :class="{selected:isEn}") En
         //- router-link(:to="top").nav__item.top 
         //-     icon.arrow(name="arrow" width="26px" height="26px" )
         //- router-link(:to="bottom").nav__item.bottom 
@@ -190,6 +190,10 @@ export default {
         background-repeat: no-repeat;
         background-size: contain;
     }
+}
+
+.selected{
+    border-bottom: 2px solid white;
 }
 
 </style>

@@ -12,6 +12,8 @@
                 button.button.enter( @click="enter" ref="button")
                     span(v-if="isEn") ENTER
                     span(v-else) ENTRER
+
+                a( class="contect" href="mailto:matthieublake.cinema@gmail.com" target="_blank" rel="no-refer no-folow").contact Contact
 </template>
 
 <script>
@@ -199,5 +201,12 @@ export default {
     &.active{
         border-bottom: 2px solid white;
     }
+}
+.contact{
+    font-size: 18px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 30px;
 }
 </style>
